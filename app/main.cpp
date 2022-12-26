@@ -1,13 +1,11 @@
-#include <iostream>
-#include "my_lib/my_lib.h"
-#include "nlohmann/json.hpp"
 #include "cxxopts.hpp"
 #include "fmt/format.h"
+#include "my_lib/my_lib.h"
+#include "nlohmann/json.hpp"
 #include "spdlog/spdlog.h"
-#include "catch2/catch.hpp"
+#include <iostream>
 
-int main()
-{
+int main() {
     std::cout << "JSON Lib Version:"
               << NLOHMANN_JSON_VERSION_MAJOR << "."
               << NLOHMANN_JSON_VERSION_MINOR << "."
